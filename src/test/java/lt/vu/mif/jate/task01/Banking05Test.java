@@ -134,7 +134,7 @@ public class Banking05Test implements BankingTestIf {
         // No funds
         checkException(BD("1.00"), s -> a2.debit(s, "USD"), NoFundsException.class);
         checkException(BD("1.00"), s -> a2.convert(s, "USD", "EUR"), NoFundsException.class);
-        checkException(BD("797.00"), s -> a2.convert(s, "EUR", "BLR"), NoFundsException.class);
+        checkException(BD("797.00"), s -> a2.convert(s, "EUR", "BRL"), NoFundsException.class);
         
     }
         
